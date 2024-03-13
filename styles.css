@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 1rem 0.5rem;
+  background-color: #4f4544;
+}
+
+header nav input,
+header nav label {
+  display: none;
+}
+
+header nav label i {
+  color: white;
+}
+
+header a i {
+  color: yellow;
+  font-size: 2em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.1rem;
+}
+
+header nav ul a {
+  color: white;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.acerca-de {
+  text-align: right;
+  width: 100%;
+}
+
+.acerca-imagen {
+  width: 50%;
+}
+
+.acerca-imagen img {
+  width: 100%;
+}
+
+.section-2 {
+  width: 100%;
+  height: 60vh;
+}
+
+.section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #4f4544;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+footer h3 {
+  color: yellow;
+}
+
+footer nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  line-height: 2;
+  text-align: center;
+}
+
+footer nav ul li a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav label {
+    display: block;
+  }
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .acerca-de {
+    width: 100%;
+    text-align: center;
+  }
+
+  .acerca-imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .acerca-imagen img {
+    height: 300px;
+    width: 200px;
+  }
+}
